@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+import logging
+logging.basicConfig(level=logging.DEBUG)
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
+
+from asyncua.tools import uaserver
+
+
+if __name__ == "__main__":
+    uaserver()
